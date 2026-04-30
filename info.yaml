@@ -18,7 +18,7 @@ project:
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "tt_um_u-su_MVM-UART.sv"
-    - "axis_matvec_mul.v.v"
+    - "axis_matvec_mul.v"
     - "matvec_mul.sv.v"
     - "mvm_uart_system.v"
     - "skid_buffer.sv"
