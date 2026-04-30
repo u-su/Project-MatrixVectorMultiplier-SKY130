@@ -6,7 +6,7 @@ SIM ?= icarus
 FST ?= -fst # Use more efficient FST format
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = tt_um_u-su_MVM-UART.sv, axis_matvec_mul.v, matvec_mul.sv, mvm_uart_system.v, skid_buffer.sv, uart_rx.sv, uart_tx.sv
 
 ifneq ($(GATES),yes)
 
@@ -35,8 +35,8 @@ endif
 COMPILE_ARGS 		+= -I$(SRC_DIR)
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.v
-TOPLEVEL = tb
+VERILOG_SOURCES += $(PWD)/mvm_uart_system_tb.sv
+TOPLEVEL = mvm_uart_system
 
 # List test modules to run, separated by commas and without the .py suffix:
 COCOTB_TEST_MODULES = test
