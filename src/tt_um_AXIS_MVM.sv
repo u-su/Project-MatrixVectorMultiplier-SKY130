@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tt_um_u-su_MVM-UART(
+module tt_um_AXIS_MVM(
     input  logic clk, rstn, rx, 
     //input  logic [NUM_WORDS-1:0][BITS_PER_WORD-1:0] s_data,
     output logic tx//, s_ready
